@@ -1,0 +1,15 @@
+{
+  "name": "scam-guard-senior",
+  "version": "1.0.0",
+  "description": "Anti-Scam Sandbox & Financial Companion for Seniors - Privacy-first scam detection using local LLM",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "keywords": ["fintech", "scam-detection", "seniors", "privacy", "ollama", "local-llm"],
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}

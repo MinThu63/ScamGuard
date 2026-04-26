@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ScamGuard — Your Digital Safety Companion</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <main id="main-content">
+    <header>
+      <h1>🛡️ ScamGuard</h1>
+      <p class="subtitle">Your friendly digital safety companion</p>
+
+      <!-- Language + Font size controls -->
+      <div class="controls-row">
+        <div class="lang-controls" role="group" aria-label="Language selection">
+          <span class="control-label" id="lang-label">Language:</span>
+          <div class="lang-buttons" role="radiogroup" aria-labelledby="lang-label">
+            <button class="lang-btn active" data-lang="en" type="button" role="radio" aria-checked="true">English</button>
+            <button class="lang-btn" data-lang="zh" type="button" role="radio" aria-checked="false">中文</button>
+            <button class="lang-btn" data-lang="ms" type="button" role="radio" aria-checked="false">Melayu</button>
+            <button class="lang-btn" data-lang="ta" type="button" role="radio" aria-checked="false">தமிழ்</button>
+          </div>
+        </div>
+        <div class="font-controls" role="group" aria-label="Text size controls">
+          <span class="control-label" id="font-label">Text Size:</span>
+          <button id="font-decrease" type="button" aria-label="Decrease text size">A−</button>
+          <button id="font-reset" type="button" aria-label="Reset text size">A</button>
+          <button id="font-increase" type="button" aria-label="Increase text size">A+</button>
+        </div>
+      </div>
+
+      <nav class="tab-nav" role="tablist" aria-label="Main navigation">
+        <button class="tab-btn active" data-tab="checker" type="button" role="tab" aria-selected="true" aria-controls="tab-checker" id="tab-btn-checker">🔍 Check a Message</button>
+        <button class="tab-btn" data-tab="history" type="button" role="tab" aria-selected="false" aria-controls="tab-history" id="tab-btn-history">📋 History</button>
+      </nav>
+    </header>
+
+    <!-- TAB: Message Checker -->
+    <div id="tab-checker" class="tab-content active" role="tabpanel" aria-labelledby="tab-btn-checker">
+      <section class="input-section" aria-label="Message checker">
+        <label for="message-input">
+          Paste a suspicious message below and I'll check it for you:
+        </label>
+        <textarea
+          id="message-input"
+          rows="7"
+          placeholder="Paste the text message, WhatsApp message, or email here..."
+          aria-describedby="input-help"
+          spellcheck="false"
+        ></textarea>
+        <p id="input-help" class="help-text">
+          🔒 Your message stays on this computer. It is never sent to the internet.
+        </p>
+        <button id="check-btn" type="button">🔍 Check This Message</button>
+      </section>
+
+      <section id="result" class="result-section hidden" aria-live="polite" aria-atomic="true">
+        <div id="result-card" class="result-card">
+          <div id="verdict-icon" class="verdict-icon" aria-hidden="true"></div>
+          <h2 id="verdict-text"></h2>
+          <button id="speak-btn" class="speak-btn" type="button" aria-label="Read result aloud">
+            🔊 Read Aloud
+          </button>
+          <p id="explanation"></p>
+          <div id="tips-section" aria-label="Safety tips">
+            <h3>What you can do:</h3>
+            <ul id="tips-list" role="list"></ul>
+          </div>
+          <div id="links-section" class="links-section hidden" aria-label="Link safety analysis">
+            <h3>🔗 Links found in this message:</h3>
+            <div id="links-list"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- TAB: History -->
+    <div id="tab-history" class="tab-content" role="tabpanel" aria-labelledby="tab-btn-history">
+      <section class="history-section" aria-label="Scan history">
+        <div class="history-header">
+          <h2>📋 Past Checks</h2>
+          <button id="clear-history-btn" class="clear-btn" type="button">🗑️ Clear All</button>
+        </div>
+        <p class="help-text">Your recent scam checks are saved here so you or a family member can review them.</p>
+        <div id="history-list" class="history-list" role="list">
+          <p class="empty-state">No checks yet. Go check a message!</p>
+        </div>
+      </section>
+    </div>
+
+    <section id="status-bar" class="status-bar" aria-label="System status">
+      <span id="ollama-status">Checking connection...</span>
+    </section>
+
+    <footer>
+      <p>🔒 100% Private — Everything runs on your computer. No data leaves this device.</p>
+    </footer>
+  </main>
+
+  <script src="i18n.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
