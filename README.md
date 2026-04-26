@@ -229,16 +229,21 @@ Open **http://localhost:3000** in your browser.
 
 ## Screenshots
 
-> Add your screenshots here. Suggested captures:
+<img width="970" height="1188" alt="image" src="https://github.com/user-attachments/assets/f5caa66e-04df-47b9-a3b1-d87582461a01" />
+<img width="1578" height="1235" alt="image" src="https://github.com/user-attachments/assets/85bdc028-9895-4408-b6bb-c2018fd86bbb" />
+<img width="901" height="1231" alt="image" src="https://github.com/user-attachments/assets/4bb645c9-61dd-452f-881a-452f0ce84f13" />
+<img width="929" height="1229" alt="image" src="https://github.com/user-attachments/assets/243c2aa2-adf2-49a2-9ba5-03d0b0bc31cb" />
+<img width="947" height="1189" alt="image" src="https://github.com/user-attachments/assets/fbcdbf46-aa8e-4f42-82bc-2b1a0a69a3ca" />
+<img width="724" height="980" alt="image" src="https://github.com/user-attachments/assets/7ef02bb9-5db8-464f-b0c0-b8c769f7fd54" />
+<img width="852" height="957" alt="image" src="https://github.com/user-attachments/assets/1bbf7786-f6c7-43ce-b64d-420223f1b1af" />
+<img width="834" height="1028" alt="image" src="https://github.com/user-attachments/assets/fc3f4a38-bc48-42c3-9232-5a241ce18db5" />
 
-| Screen | Description |
-|--------|-------------|
-| `screenshots/home.png` | Main checker interface with language picker |
-| `screenshots/scam-result.png` | Scam verdict with link analysis |
-| `screenshots/safe-result.png` | Safe verdict with reassuring message |
-| `screenshots/chinese-ui.png` | Full Chinese language interface |
-| `screenshots/history.png` | History tab with past checks |
-| `screenshots/mobile.png` | Responsive mobile view |
+
+
+
+
+
+
 
 ---
 
