@@ -228,7 +228,7 @@ Open **http://localhost:3000** in your browser.
 ---
 
 ## Screenshots
-
+<img width="984" height="537" alt="image" src="https://github.com/user-attachments/assets/4092dcb8-f111-4cac-b0ca-d453d505b1ba" />
 <img width="970" height="1188" alt="image" src="https://github.com/user-attachments/assets/f5caa66e-04df-47b9-a3b1-d87582461a01" />
 <img width="1578" height="1235" alt="image" src="https://github.com/user-attachments/assets/85bdc028-9895-4408-b6bb-c2018fd86bbb" />
 <img width="901" height="1231" alt="image" src="https://github.com/user-attachments/assets/4bb645c9-61dd-452f-881a-452f0ce84f13" />
